@@ -1,0 +1,286 @@
+/*resset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.clear {
+  clear: both;//clear float cho img-item
+}
+
+.text-white {
+  color: white!important;
+}
+
+#main {
+
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  background-color: #000;
+  z-index: 3;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: block;
+}
+
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*con truc tiep*/
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+.subnav li:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+.nav-arrow-down {
+  font-size: 14px;
+  line-height: 46px;
+}
+
+#header .search-btn {
+  padding: 0 21px;
+  float: right;// chuyen sang phai va de luon thuoc tinh block
+}
+
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.search-icon {
+  color: white;
+  font-size: 20px;
+  line-height: 46px!important;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+  padding-top: 50%;//important note
+}
+
+.text-content {
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 47px;
+  width: 100%;
+  /*left: 50%;//c2*/
+  /*transform: translateX(-50%);*/
+}
+
+#slider .text-heading {
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#content {
+
+}
+
+#content .content-section {
+  width: 800px;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading,
+.section-sub-heading {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.section-sub-heading {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.6;
+  margin: 15px auto;
+}
+
+.about-text {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 46px;
+  text-align: center;
+  /*overflow: hidden; c1*/
+}
+
+#content .member-item {
+  float: left;
+  width: calc(100% /3);
+}
+#content .member-img {
+  width: 154px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+#content .tour-section {
+  background-color: black;
+}
+
+.ticket-list {
+  background-color: white;
+  margin-top: 40px;
+}
+
+.ticket-list li {
+  list-style-type: none;
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+
+.ticket-list .quantity {
+  float: right;
+  margin-top: -3px;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+}
+
+.place-list {
+  margin-top: 32px;
+  margin-right: -7px;
+  margin-left: -7px;
+  margin-bottom: 48px;
+}
+
+.place-item {
+  float: left;
+  width: 33.3333%;
+  padding: 0 8px;
+}
+
+.place-body {
+  background-color: white;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.place-img {
+  width: 100%;
+  display: block;//bot tao khoang cach
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.place-time {
+  margin: 15px auto;
+  color: #757575;
+}
+
+.place-description {
+  line-height: 1.6;
+}
+
+.place-buy-btn {
+  color: white;
+  background-color: #000000;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+  background-color: #cccccc;
+
+}
+
+
+
+#footer {
+
+}
