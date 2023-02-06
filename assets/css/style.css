@@ -276,11 +276,115 @@ html {
 
 .place-buy-btn:hover {
   background-color: #cccccc;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.open {
+  display: flex;
+}
+
+.modal-container {
+  width: 900px;
+  max-width: calc(100% - 32px);
+  background-color: white;
+  min-height: 200px;
+  position: relative;
+  animation: modalFadeIn ease .5s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-header {
+  background-color: #009688;
+  color: white;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header .modal-header-icon {
+  padding-right: 10px;
+}
+
+.modal-body {
+  padding: 16px;
+  font-size: 15px;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  margin-bottom: 24px;
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
 
 }
 
+.modal-pay {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  background-color: #009688;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 1;
+}
 
+.modal-pay:hover {
+  opacity: 0.7;
+}
+
+.modal-footer {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.modal-footer a {
+  color: #2196F3;
+}
 
 #footer {
 
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
