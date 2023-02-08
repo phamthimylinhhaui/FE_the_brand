@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  html {
+    color: red !important;
+  }
+}
+
+@media (max-width: 740px) {
+  #nav li {
+    display: block!important;
+  }
+}
