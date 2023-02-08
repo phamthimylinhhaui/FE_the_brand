@@ -6,6 +6,7 @@
 }
 /* common */
 html {
+  scroll-behavior: smooth;
   font-family: helvetica, arial, sans-serif;
 }
 
@@ -471,7 +472,6 @@ html {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
-
 
 @keyframes modalFadeIn {
   from {
