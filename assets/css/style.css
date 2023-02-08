@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/*common*/
 html {
   font-family: helvetica, arial, sans-serif;
 }
@@ -17,6 +17,30 @@ html {
   color: white!important;
 }
 
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-third {
+  width: 33.333%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/**/
 #main {
 
 }
@@ -173,14 +197,9 @@ html {
 
 #content .member-list {
   margin-top: 46px;
-  text-align: center;
   /*overflow: hidden; c1*/
 }
 
-#content .member-item {
-  float: left;
-  width: calc(100% /3);
-}
 #content .member-img {
   width: 154px;
   border-radius: 4px;
@@ -225,15 +244,11 @@ html {
 
 .place-list {
   margin-top: 32px;
-  margin-right: -7px;
-  margin-left: -7px;
   margin-bottom: 48px;
 }
 
 .place-item {
-  float: left;
   width: 33.3333%;
-  padding: 0 8px;
 }
 
 .place-body {
