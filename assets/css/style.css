@@ -22,6 +22,12 @@ html {
   margin-right: -8px;
 }
 
+.row:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 .col {
   float: left;
   padding-left: 8px;
@@ -36,8 +42,20 @@ html {
   width: 50%;
 }
 
+.col-full {
+  width: 100%;
+}
+
 .text-center {
   text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 /**/
@@ -387,6 +405,42 @@ html {
 
 .modal-footer a {
   color: #2196F3;
+}
+
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form .form-control:focus-visible {
+  outline: 1px solid blue;
+}
+
+.contact-form .form-submit {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  float: right;
 }
 
 #footer {
