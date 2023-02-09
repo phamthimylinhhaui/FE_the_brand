@@ -31,6 +31,11 @@
             <div class="search-btn">
                 <i class="ti-search search-icon"></i>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu menu-icon"></i>
+            </div>
+
         </div>
 
         <div id="slider">
@@ -222,6 +227,31 @@
         modalContainer.addEventListener('click', function(e) {
           e.stopPropagation();
         })
+
+    //     humbemger menu
+        const header = document.getElementById('header');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const headerHeight = header.clientHeight;
+
+        mobileMenu.addEventListener('click', function() {
+          const isClose = header.clientHeight === headerHeight;
+
+          if (isClose) {
+            header.style.height = 'auto';
+          } else {
+            header.style.height = '';
+          }
+        })
+
+    //  dynamic open/close menu when click
+        let menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (let i = 0 ; i < menuItems.length; i++) {
+          let menuItem = menuItems[i];
+          menuItem.addEventListener('click', function () {
+            // console.log(this);
+            header.style.height = '';
+          })
+        }
 
     </script>
 </body>
