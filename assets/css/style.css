@@ -87,6 +87,7 @@ html {
   height: 46px;
   background-color: #000;
   z-index: 3;
+  overflow: hidden;
 }
 
 #nav {
@@ -150,9 +151,14 @@ html {
   line-height: 46px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
   padding: 0 21px;
   float: right;// chuyen sang phai va de luon thuoc tinh block
+}
+
+#header .mobile-menu-btn {
+  background-color: #ccc;
 }
 
 #header .search-btn:hover {
@@ -160,10 +166,15 @@ html {
   cursor: pointer;
 }
 
+.menu-icon,
 .search-icon {
   color: white;
   font-size: 20px;
   line-height: 46px!important;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+  color: black;
 }
 
 #slider {
