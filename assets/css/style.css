@@ -129,12 +129,24 @@ html {
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
+  display: block;
 }
 
 #nav .subnav a {
   color: black;
   padding: 0 12px;
   line-height: 38px;
+}
+
+#header .search-btn,
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header .mobile-menu-btn {
+  display: none;
 }
 
 .subnav li:hover {
