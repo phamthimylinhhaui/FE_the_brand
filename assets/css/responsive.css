@@ -6,11 +6,27 @@
 
 }
 @media (max-width: 739px) {
+  #header {
+    overflow: hidden;
+  }
+
   #nav {
     display: block;
   }
 
-  #nav li {
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+
+  #nav .subnav li a {
+    color: #fff;
+    padding: 5px 40px;
+  }
+
+  #nav li,
+  #nav li a,
+  #nav li:hover a {
     display: block;
   }
 
