@@ -3,5 +3,41 @@
 }
 
 @media (max-width: 740px) {
+  #header {
+    overflow: hidden;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+
+  #nav .subnav li a {
+    color: #fff;
+    padding: 5px 40px;
+  }
+
+  #nav li,
+  #nav li a,
+  #nav li:hover a {
+    display: block;
+  }
+
+  #nav > li:first-child {
+    display: inline-block;
+  }
+
+  #header .mobile-menu-btn {
+    display: block;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+@media (max-width: 740px) {
 
 }
