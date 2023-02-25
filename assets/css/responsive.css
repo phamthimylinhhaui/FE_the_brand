@@ -1,7 +1,29 @@
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 
 }
 
-@media (max-width: 740px) {
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+@media (max-width: 739px) {
+  #nav {
+    display: block;
+  }
+
+  #nav li {
+    display: block;
+  }
+
+  #nav > li:first-child {
+    display: inline-block;
+  }
+
+  #header .mobile-menu-btn {
+    display: block;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
 
 }

@@ -87,6 +87,7 @@ html {
   height: 46px;
   background-color: #000;
   z-index: 3;
+  overflow: hidden;
 }
 
 #nav {
@@ -128,12 +129,24 @@ html {
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
+  display: block;
 }
 
 #nav .subnav a {
   color: black;
   padding: 0 12px;
   line-height: 38px;
+}
+
+#header .search-btn,
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header .mobile-menu-btn {
+  display: none;
 }
 
 .subnav li:hover {
@@ -150,9 +163,14 @@ html {
   line-height: 46px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
   padding: 0 21px;
   float: right;// chuyen sang phai va de luon thuoc tinh block
+}
+
+#header .mobile-menu-btn {
+  background-color: #ccc;
 }
 
 #header .search-btn:hover {
@@ -160,10 +178,15 @@ html {
   cursor: pointer;
 }
 
+.menu-icon,
 .search-icon {
   color: white;
   font-size: 20px;
   line-height: 46px!important;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+  color: black;
 }
 
 #slider {
