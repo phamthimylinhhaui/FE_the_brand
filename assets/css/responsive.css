@@ -6,8 +6,13 @@
 
 }
 @media (max-width: 739px) {
-  .s-col-full {
+  .s-col-full,
+  .s-full-width {
     width: 100%;
+  }
+
+  .s-mt-8 {
+    margin-top: 8px;
   }
 
   #header {
@@ -49,5 +54,9 @@
 
   #content .member-img {
     width: 60%;
+  }
+
+  .contact-form {
+    margin-top: 16px;
   }
 }

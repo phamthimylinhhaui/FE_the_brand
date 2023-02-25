@@ -59,6 +59,10 @@ html {
   margin-top: 16px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 .btn {
   color: white;
   background-color: #000000;
@@ -255,7 +259,7 @@ html {
 }
 
 #content .member-list {
-  margin-top: 32px;
+  margin-top: 16px;
   /*overflow: hidden; c1*/
 }
 
