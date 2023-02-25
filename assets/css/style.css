@@ -255,7 +255,7 @@ html {
 }
 
 #content .member-list {
-  margin-top: 46px;
+  margin-top: 32px;
   /*overflow: hidden; c1*/
 }
 
@@ -302,7 +302,7 @@ html {
 }
 
 .place-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-item {

@@ -6,6 +6,10 @@
 
 }
 @media (max-width: 739px) {
+  .s-col-full {
+    width: 100%;
+  }
+
   #header {
     overflow: hidden;
   }
@@ -42,4 +46,8 @@
     display: none;
   }
 
+
+  #content .member-img {
+    width: 60%;
+  }
 }
