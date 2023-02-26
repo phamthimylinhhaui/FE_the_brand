@@ -95,9 +95,7 @@ body {
 
 /* PC, Tablet */
 @media (min-width: 740px) {
-  .feature-layout {
-    flex-direction: column;
-  }
+
 }
 
 .feature-item {
@@ -219,4 +217,11 @@ body {
   padding: 4px 16px;
   background-color: rgb(192, 210, 227);
   flex: 1;
+}
+
+@media (max-width: 739px) {
+  .feature-layout {
+    flex-direction: column!important;
+  }
+
 }
