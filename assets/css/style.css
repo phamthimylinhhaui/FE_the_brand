@@ -59,6 +59,10 @@ html {
   margin-top: 16px;
 }
 
+.mt-32 {
+  margin-top: 32px;
+}
+
 .btn {
   color: white;
   background-color: #000000;
@@ -255,7 +259,7 @@ html {
 }
 
 #content .member-list {
-  margin-top: 46px;
+  margin-top: 16px;
   /*overflow: hidden; c1*/
 }
 
@@ -302,7 +306,7 @@ html {
 }
 
 .place-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-item {
@@ -446,6 +450,14 @@ html {
 .contact-info i[class*="ti-"] {
   width: 30px;
   display: inline-block;
+}
+
+.contact-info a {
+  opacity: 0.8;
+}
+
+.contact-info a:hover {
+  opacity: 1;
 }
 
 .contact-form {
